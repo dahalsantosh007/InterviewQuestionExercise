@@ -1,0 +1,100 @@
+*,
+body,
+html {
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #555353 !important;
+  cursor: no-drop !important;
+}
+
+.container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.addPage--div__center__white__box {
+  background-color: white;
+  width: 46rem;
+  height: 26rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 28px 0px #c5c5c5;
+}
+
+.addPage--input__number {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 1rem;
+  font-size: xxx-large !important;
+  color: black !important;
+  background: whitesmoke;
+  padding: 2rem !important;
+}
+
+.addPage--label__calcualted__value {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 1rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large !important;
+  color: black !important;
+  background: whitesmoke;
+}
+
+.addPage--span__equal_sign {
+  height: 4rem;
+  width: 2rem;
+  font-size: 40px;
+}
+
+.addPage--icon__add {
+  background-color: white;
+  height: 2rem !important;
+  width: 2rem !important;
+  color: black;
+}
+
+.addPage--div__button__group {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+  height: 13rem;
+  padding: 3rem;
+  padding-top: 0rem;
+}
+
+.addPage--div__center__number__box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.addPage--button__clear,
+.addPage--button__add {
+  pointer-events: inherit !important;
+  height: 4rem;
+  width: 8rem;
+  border-radius: 4rem !important;
+  background: black !important;
+  color: white !important;
+  font-size: large !important;
+  cursor: pointer;
+}
+
+.addPage--button__clear {
+  margin-right: 4rem !important;
+}
