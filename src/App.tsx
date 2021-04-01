@@ -15,13 +15,13 @@
         * make UX changes
 */
 
-import React from 'react'
+import React from 'react';
 import AddPage from './Page/AddPage';
 import ContextProvider from './app/Provider';
 
 import './App.css';
 
-const App = () => {
+const App = ():JSX.Element => {
     return (
         <ContextProvider>
             <AddPage/>

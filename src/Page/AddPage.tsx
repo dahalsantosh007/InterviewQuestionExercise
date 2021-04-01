@@ -9,12 +9,12 @@ import Button from '@material-ui/core/Button';
 // Provider Import
 import {useProviderContext} from '../app/Provider';
 
-const AddPage = () => {
+const AddPage = ():JSX.Element => {
     const {state,dispatch} = useProviderContext();
 
     const addFunction=()=>{
         let calculatedValue = state.firstNumber+state.secondNumber
-        dispatch({type:'CALCULATED_VALUE',calculatedValue:calculatedValue})
+        dispatch({type:'CALCULATED_VALUE',payload:calculatedValue})
     }
 
     const checkDisableValue=()=>{
@@ -32,7 +32,7 @@ const AddPage = () => {
                         id="firstNumber"
                         type = "number"
                         value = {state.firstNumber}
-                        onChange={(e)=>dispatch({type:'FIRST_NUMBER',value:parseInt(e.target.value,10)})}
+                        onChange={(e)=>dispatch({type:'FIRST_NUMBER',payload:parseInt(e.target.value,10)})}
                         autoFocus = {true} 
                         disableUnderline={true}
                         required = {true}
@@ -44,7 +44,7 @@ const AddPage = () => {
                         value = {state.secondNumber}
                         disableUnderline={true}
                         required ={true}
-                        onChange={(e)=>dispatch({type:'SECOND_NUMBER',value:parseInt(e.target.value,10)})}
+                        onChange={(e)=>dispatch({type:'SECOND_NUMBER',payload:parseInt(e.target.value,10)})}
                         className ="addPage--input__number "/>
                     <div className ="addPage--span__equal_sign ">=</div>
                     <InputLabel
